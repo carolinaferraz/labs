@@ -7,7 +7,7 @@ public class SwitchSttmt {
 // numerical representation of a snowman ☃
 		
 		char letter = 'b';
-		
+
 		switch (letter) {
 		case 'a':
 			System.out.println("a for assembly!");
