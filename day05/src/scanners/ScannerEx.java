@@ -17,7 +17,7 @@ public class ScannerEx {
 			break;
 			
 		case "noon":
-			System.out.println("hello there :)");
+			System.out.println("hello there :)" );
 			break;
 			
 		case "night":
