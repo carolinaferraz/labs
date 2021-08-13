@@ -1,5 +1,7 @@
 package arrays;
 
+import methods.Dog;
+
 public class ArrayBasics {
 
 	public static void main(String[] args) {
@@ -28,6 +30,13 @@ public class ArrayBasics {
 //		change/assign value using index
 		numArrayThree[1] = 3650; 
 		System.out.println(numArrayThree[1]);
+		
+		
+/*		using Dog class from methods package imported
+ 		(useless here but shows no errors)
+*/
+		Dog[] dogs = new Dog[2];
+		System.out.println("\ud83d\udc36" + ".length is : " + dogs.length);
 		
 	}
 }
