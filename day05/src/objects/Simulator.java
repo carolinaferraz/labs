@@ -1,5 +1,7 @@
 package objects;
 
+import animals.Cat;
+
 public class Simulator {
 	public static void main (String[] args) {
 		Dog d = new Dog("pierre", "dalmatian", 1, 60.0);
@@ -16,5 +18,13 @@ public class Simulator {
 		System.out.println(nina.age);
 		System.out.println(nina.weight);
 		
-	}
+/*using a different package - must include an import sttmt
+ * or fully qualified class name (fqcn) 
+*/	
+		Cat c = new Cat();
+		
+// fully qualified class name (fqcn) w/out import
+		animals.Shark s = new animals.Shark();
+
+		}
 }
