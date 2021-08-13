@@ -1,5 +1,6 @@
 .DS_Store
 .settings
+sandbox/
 
 # Compiled class file
 *.class
