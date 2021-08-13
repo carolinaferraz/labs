@@ -17,6 +17,7 @@ public class MultiDimensional {
 		
 		System.out.println(one[2]);
 		System.out.println(twoDee[0][1]);
+		System.out.println(twoDee[2][0]);
 	}
 
 }
