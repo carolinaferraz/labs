@@ -15,5 +15,9 @@ public class Simulator {
 		scooby.bark();
 		scooby.feed();
 		scooby.feed("scooby snack");
+		
+		scooby.name = "scooby";
+		scooby.age = 7;
+		scooby.breed = "great dane";
 	}
 }
