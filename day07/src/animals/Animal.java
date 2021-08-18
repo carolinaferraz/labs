@@ -8,20 +8,24 @@ public abstract class Animal {
 	public int age;
 	public double weight;
 	
-	public Animal() {
-		System.out.println("animal no-args constructor called !");
-	}
+//	no args constructor
+//	public Animal() {
+//		System.out.println("animal no-args constr called");
+//	}
 	
+	
+//	constructor
 	public Animal(String name, int age, double weight) {
-		System.out.println("parameterized constructor called !");
+//		System.out.println("parameterized constructor called !");
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
 	}
 	
-//	abstract method below has 
-//	the same idea as in the class :) 
-	
+/*	abstract method below has 
+	the same idea as in the class; allows for each
+	instance to implement its code separately w/  same call :) 
+*/	
 	public abstract void funFact();
 		
 }

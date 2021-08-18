@@ -7,6 +7,7 @@ import fixtures.Room;
 public class RoomManager {
 
 	Room startingRoom;
+	
 //	all rooms in the house:
 	Room[] rooms = new Room[3];
 	
@@ -20,7 +21,7 @@ public class RoomManager {
 			this.rooms[0] = foyer;
 	        this.startingRoom = foyer;
 	        
-	        
+	    
 	        Room diningroom = new Room(
 	    			"The Dining Room",
 	    			"short description of dining room",

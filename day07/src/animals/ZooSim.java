@@ -8,15 +8,15 @@ public class ZooSim {
 		
 		Platypus p = new Platypus ("perry", 5, 25.0);
 		Lion l = new Lion ("larry", 1, 55.0);
-//		printAnimalFunFact(p);
-//		printAnimalFunFact(l);
+		printAnimalFunFact(p);
+		printAnimalFunFact(l);
 		
 		Penguin penguin = new Penguin("igloo", 2, 10.0);
 		printAnimalFunFact(penguin);
 		
-//	polymorphism in action (mixing constr.):
-/* prim. var: type of primitive, value
-	 * ref var: type of reference, memory address 
+/*	polymorphism in action (mixing constr.):
+ 	prim. var: type of primitive, value
+	ref var: type of reference, memory address 
 */
 		Animal anim = new Platypus ("patrick", 6, 20.0);
 		
@@ -38,6 +38,11 @@ public class ZooSim {
 	} else if (anim instanceof Lion) {
 		((Lion)anim).Rawr();
 	}
+		
+//		interacting w/ an interface :
+		if (anim instanceof Swimmable) {
+			((Swimmable) anim).swim();
+		}
 	
 	}
 }

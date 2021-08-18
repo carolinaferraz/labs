@@ -24,7 +24,7 @@ public class Main {
 		 
 		System.out.println("welcome to the home tour. \n you're in  ");
 		
-		p1.currentroom;
+
 //		call printRoom
 //		printRoom();
 		
@@ -33,24 +33,24 @@ public class Main {
 		System.out.println("where to next?  type 'go north' or 'go west'");
 		Scanner scanner = new Scanner(System. in);
 	    
+
 	   
 	    
 	    do { 
 	    		String direction = scanner. nextLine();
 	    		
 	    		 if(direction.equals("go north")) {
-	    		    	System.out.println("you went to the " + (rm.rooms[0]).toString());
+	    		    	System.out.println("you went to the " + (rm.rooms[0]));
 	    		    } else {
 	    		    	System.out.println("invalid direction...  ");
 	    		    }
 	    
 	    } 
 	      while (quit != true);
-
+		   scanner.close();
 	}
-	
 
-	
+
     
 	private static void printRoom (Player player) {
 		

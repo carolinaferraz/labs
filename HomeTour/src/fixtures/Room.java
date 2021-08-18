@@ -27,6 +27,8 @@ public class Room extends Fixture {
 	}
 	
 	public Room getExit(String direction) {
+		if (direction == "go north") 
+			return 
 		
 	}
 }
