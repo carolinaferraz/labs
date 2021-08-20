@@ -31,51 +31,43 @@ public class Main {
 		System.out.println("\ud83d\udeaa You're in " + p1.currentRoom);
 	}
 	
-public static String collectInput() {
+	public static String collectInput() {
 		
 		String input = null;
 		
-			do {
-				System.out.print(">> ");
-				input = sc.nextLine(); 
-				
+		do {
+			System.out.print(">> ");
+			input = sc.nextLine(); 
 
-					if(input.equalsIgnoreCase("quit") ) {
-						System.out.println("end of tour!");
-						return null;
-						
-					} else return input.toLowerCase(); 
+				if(input.equalsIgnoreCase("quit") ) {
+					System.out.println("end of tour!");
+					return null;
+				
+				} else return input.toLowerCase(); 
 					
-			} while (! input.equalsIgnoreCase("quit"));
-			
+		} while (! input.equalsIgnoreCase("quit"));	
 	}
 	
 	public static void walkAround(Player p1) {
-		
 		String where = sc.nextLine();
+		
 		do {
-	 			if (where.contains("go"));{
-	 				
+	 			if (where.contains("go")); {
 	 				p1.setCurrentRoom(p1.getCurrentRoom().getNext());
 	 				printRoom(p1);
 	 				
-//	 				System.out.print(">> ");
-//	 				where = sc.nextLine();
-	 				
-	 				collectInput();
-	 				
+	 				System.out.print(">> ");
+	 				where = sc.nextLine();	 				
 	 			
 	 			}  if (where.contains("head")) {
 	 				p1.setCurrentRoom(p1.getCurrentRoom().getPrev());
 	 				printRoom(p1);
 	 				
-//	 				System.out.print(">> ");
-//	 				sc.nextLine();
+	 				System.out.print(">> ");
+	 				sc.nextLine();
 	 				
-	 				collectInput();
-	 				}
 	 			
-	 			if(where.equalsIgnoreCase("quit") ) {
+	 			} if(where.equalsIgnoreCase("quit") ) {
 					System.out.println("end of tour!"); }
 
 					
