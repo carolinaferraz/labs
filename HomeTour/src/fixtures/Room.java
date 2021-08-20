@@ -13,7 +13,7 @@ public class Room extends Fixture {
 			String longDescription) {
 		super(name, shortDescription, longDescription);
 		
-		this.exits = new Room[1];
+		this.exits = new Room[2];
 	}
 	
 

@@ -74,8 +74,6 @@ public class RoomManager {
 	    	    			backyard.setPrev(kitchen);
 	    	    			kitchen.setNext(backyard);
 	    	    			kitchen.setPrev(livingroom);
-	    	    			
-	    	    			
-	    	   
+	    	    			  
 	}	
 }
