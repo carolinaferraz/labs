@@ -7,7 +7,9 @@ public class SimulatorOne {
 		System.out.println(p.pub);
 		System.out.println(p.pro);
 		System.out.println(p.def);
-//		System.out.println(p.pri); // error-not visible
+		
+//		System.out.println(p.pri); 
+		// ↑ error-not visible ↑
 		}
 
 }

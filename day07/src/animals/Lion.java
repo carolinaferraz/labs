@@ -1,10 +1,22 @@
 package animals;
 
 public class Lion extends Animal {
+
+	public String lionInt;
 	
-	public Lion(String name, int age, double weight) {
+	public Lion (String name, int age, double weight, String lionInt) {
 		super(name, age, weight);
-		// TODO Auto-generated constructor stub
+		
+		this.lionInt = lionInt;
+	}
+
+	public Lion() {
+//		super(); lives here implicitly!
+	}
+
+	@Override
+	public String toString() {
+		return lionInt;
 	}
 
 	public void funFact() {
