@@ -1,24 +1,13 @@
 package designpatterns;
 
-/*
- * more formal pojo.  provides more restrictions
- * to the creation of this class. 
- * jb should provide a no-args constructor
- * jb should declare all fields (vars) private
- * jb should declare a getter/setter for each field
- * jb should override the
- * 		toString, hashcode, and equal methods
- * jb typically has a parameterized constructor
- * jb typically will implement the "serializable" 
- */
-
+//class w/ all fields private
 public class JavaBean {
 	private String name;
 	private int id;
 	private double amount;
 	
+//	no-args constructor 
 	public JavaBean() {
-		
 	}
 	
 	public JavaBean(String name, int id, double amount) {
@@ -26,9 +15,14 @@ public class JavaBean {
 		this.id = id;
 		this.amount = amount;
 	}
-	
+
+//	getters && setters for each field
 	public String getName() {
 		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getId() {
@@ -47,7 +41,10 @@ public class JavaBean {
 		this.amount = amount;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+//	override the toString 
+	@Override
+	public String toString() {
+		return "JavaBean [name=" + name + ", id=" + id + ", amount=" + amount + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
 	}
  }

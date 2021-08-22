@@ -9,6 +9,12 @@ public class ZooSim {
 		System.out.println(l);
 		l.eat("a hunter \ud83d\ude0b \n");
 		
+		
+		Duck d = new Duck("donald", 89, 2.5);
+		System.out.println(d.name + " duck \ud83d\udc24");
+		tryToSwim(d);
+		System.out.println();
+		
 
 		Platypus p = new Platypus("perry", 5, 25.0);
 //		System.out.println(p.name + " the platypus");
@@ -29,17 +35,24 @@ public class ZooSim {
 		anim.funFact();
 		
 			if(anim instanceof Platypus) {	
-
-		
-		/*	line 23 could be called below because Platypus *extends* Animal, allowing covariants */
+		/*	line 29 could be called below because Platypus *extends* Animal, allowing covariants */
 				System.out.println(" \u2192 envenmon(); called from printAnimalFunFact :  ");
 		((Platypus)anim).envenmon();
-;
 		
 		} else if (anim instanceof Lion) {
 			System.out.print("lionInt here: " + ((Lion)anim). lionInt);
+		
+		} if (anim instanceof Swimmable) {
+			((Swimmable)anim).swim();
 		}
+			
 			
 		System.out.println();
 	}	
+	
+//	using interfaces 
+	public static void tryToSwim(Swimmable swimmer) {
+		swimmer.swim();
+		System.out.println("hello from tryToSwim(); \ud83d\udca6 ");
+	}
 }

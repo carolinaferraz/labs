@@ -11,7 +11,7 @@ public abstract class Animal {
 	public abstract void funFact();
 
 	public Animal() {
-		System.out.println("hello from no-args Animal const.");
+		System.out.println("hello from no-args Animal constructor.");
 	}
 
 public Animal (String name, int age, double weight) {

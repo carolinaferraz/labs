@@ -4,9 +4,12 @@ public abstract class Bird extends Animal {
 
 	public Bird(String name, int age, double weight) {
 		super(name, age, weight);
-		// TODO Auto-generated constructor stub
 	}
 	
-	public abstract void fly();
+//	not true about  all birds. solved by creating 'flyable' interface -> moved there <- 
+//	public abstract void fly(); 
 	
+//	true abt all birds
+	public abstract void layEggs();
+
 }

@@ -1,14 +1,16 @@
+/*  plain old java object  */
 package designpatterns;
 
-/* 
- * plain old java object ! 
- */
+//	serviceable class 
 public class POJO {
+	
 	public String name;
+	@SuppressWarnings("unused")
 	private int id;
 	protected double amount;
 	
 	public void printInfo() {
-		System.out.println("name is: " + name +" amount is " + amount);
+		System.out.println("name is: " + name +
+				" amount is " + amount);
 	}
 }
