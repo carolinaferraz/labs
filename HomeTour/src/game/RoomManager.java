@@ -9,8 +9,10 @@ public class RoomManager {
 	Room startingRoom;
 	Room[] rooms = new Room[3];
 		
-/* the init() method: instantiates all Room objects,  links them together as exits, 
+/* the init() method: instantiates all Room objects,  
+ * links them together as exits, 
  *  and designates a startingRoom.*/	
+	
 	public void init() {
 		
 	Room foyer = new Room(
@@ -27,14 +29,10 @@ public class RoomManager {
 	    	"livingroom longDescription. ");
 	    	this.rooms[1] = livingroom;
 	    			
-	    			
 	Room kitchen = new Room(
 	    	    "the kitchen \n",
 			"kitchen shortDescription \n",
-	    	    	"kitchen longDescription. \n"
-	    	    			
-	    	    	+ "the backyard looks inviting, 'go out' ? \n"
-	    	    	+ "type 'head east' to stay inside.");
+	    	    	"kitchen longDescription. \n");
 	    	    	this.rooms[2] = kitchen;
 	    	    			
 //	   Room backyard = new Room(
