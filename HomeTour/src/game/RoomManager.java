@@ -7,7 +7,7 @@ import fixtures.Room;
 public class RoomManager {
 	
 	Room startingRoom;
-	Room[] rooms = new Room[5];
+	Room[] rooms = new Room[3];
 		
 /* the init() method: instantiates all Room objects,  links them together as exits, 
  *  and designates a startingRoom.*/	
@@ -20,13 +20,6 @@ public class RoomManager {
 			this.rooms[0] = foyer;
 	        this.startingRoom = foyer;
 	        
-	        
-//	 duplicated kitchen in order to to populate a different exit
-	  Room shadowkitchen = new Room(
-		"the kitchen \n",
-		 "kitchen shortDescription \n", 			
-		 "kitchen longDescription.");
-		    	this.rooms[4] = shadowkitchen;
 	        
 	Room livingroom = new Room(
 	    	"the living room  \n",			
@@ -44,23 +37,21 @@ public class RoomManager {
 	    	    	+ "type 'head east' to stay inside.");
 	    	    	this.rooms[2] = kitchen;
 	    	    			
-	   Room backyard = new Room(
-	    	    	   "the backyard \n",
-	    	    	   "backyard shortDescription \n",
-	    	    	    "backyard longDescription");
-	    	    	this.rooms[3] = backyard;
+//	   Room backyard = new Room(
+//	    	    	   "the backyard \n",
+//	    	    	   "backyard shortDescription \n",
+//	    	    	    "backyard longDescription");
+//	    	    	this.rooms[3] = backyard;
 	    	    			
 	    	    			
-//	adjacent rooms
+/*	adjacent rooms */
 	    	    			
 	 foyer.setNext(livingroom);
 	 foyer.setPrev(null);
 	    	    			
 	livingroom.setNext(kitchen);
 	livingroom.setPrev(foyer);
-	backyard.setNext(shadowkitchen);
-	backyard.setPrev(kitchen);
-	kitchen.setNext(backyard);
+	kitchen.setNext(null);
 	kitchen.setPrev(livingroom);
 	    	    			  
 	}	
