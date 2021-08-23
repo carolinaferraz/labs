@@ -1,6 +1,9 @@
 .DS_Store
 .settings
 sandbox/
+day09/
+notes.md
+
 
 # Compiled class file
 *.class
