@@ -28,6 +28,7 @@ public class Aisle {
 		return this.prev;
 	}
 	
+//	setters
 	public void setNext(Aisle next) {
 		this.next = next;
 	}

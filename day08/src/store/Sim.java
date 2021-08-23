@@ -8,28 +8,24 @@ public class Sim {
 		// call the init method first to create the store
 		store.init();
 		
-		// Player will exist here
-		Customer player = new Customer();
+		// shopper will exist here
+		Customer shopper = new Customer();
 		
 		// Establish the starting location for the player
-		player.setCurrentLocation(store.getFirstAisle());
+		shopper.setCurrentLocation(store.getFirstAisle());
 		
-		/*
-		 * GATHER INPUT...
-		 */
+ // gather input here
+		
 	}
 	
-	public void changePlayerLocation(Customer player) {
-		/*
-		 * if/else statement to determine which direction to move
-		 */
+	public void changeShopperLocation(Customer shopper) {
+//	if sttmt here to determine which direction to go
 		
-		// Movement based on player's current location. In this case, forward
-		Aisle targetLocation = player.getCurrentLocation().moveForward();
+		
+// runs if choice is fwd
+		Aisle targetLocation = shopper.getCurrentLocation().moveForward();
 
-		// Move player to the targetLocation...in this case Forward!
-		player.setCurrentLocation(targetLocation);
-		
-		
+		// moves shopper there, updates reference
+		shopper.setCurrentLocation(targetLocation);	
 	}
 }

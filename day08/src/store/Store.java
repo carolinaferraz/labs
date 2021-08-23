@@ -16,9 +16,8 @@ public class Store {
 		Aisle chipsAisle = new Aisle("Chips", null, null);
 //		aisles[1] = chipsAisle;
 		
-		/*
-		 * Setting exits/connections for the aisles
-		 */
+// establishing exits/connections 
+		
 		breadAisle.setNext(chipsAisle);
 		chipsAisle.setPrev(breadAisle);
 		
