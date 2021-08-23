@@ -8,8 +8,7 @@ public class RoomManager {
 	
 	Room startingRoom;
 	Room[] rooms = new Room[5];
-	
-	
+		
 /* the init() method: instantiates all Room objects,  links them together as exits, 
  *  and designates a startingRoom.*/	
 	public void init() {
@@ -17,10 +16,7 @@ public class RoomManager {
 	Room foyer = new Room(
 		"the Foyer \n",
 		"a small foyer \n",
-		"foyer long description. foyer long description.  \n"
-			
-		+ "If you 'go north', you'll reach the living room \n"
-		+ "('quit' takes you back outside!) ");
+		"foyer long description.");
 			this.rooms[0] = foyer;
 	        this.startingRoom = foyer;
 	        
@@ -29,17 +25,13 @@ public class RoomManager {
 	  Room shadowkitchen = new Room(
 		"the kitchen \n",
 		 "kitchen shortDescription \n", 			
-		 "kitchen longDescription. \n"
-		 
-		+ "the backyard looks inviting, 'go out' ? type 'head east' to stay in.");
+		 "kitchen longDescription.");
 		    	this.rooms[4] = shadowkitchen;
 	        
 	Room livingroom = new Room(
 	    	"the living room  \n",			
 	    	"livingroom shortDescription \n",
-	    	"livingroom longDescription.\n "
-	    	
-	    	+ "'Go west' to the kitchen, or 'head south' and back to the foyer.");
+	    	"livingroom longDescription. ");
 	    	this.rooms[1] = livingroom;
 	    			
 	    			
@@ -55,16 +47,12 @@ public class RoomManager {
 	   Room backyard = new Room(
 	    	    	   "the backyard \n",
 	    	    	   "backyard shortDescription \n",
-	    	    	    "backyard longDescription. \n"
-	    	    	    			
-	    	    	   	+ "enjoy the nice day! \ud83d\ude0e \n"
-	    	    	   	+ "'quit' or 'go' back.");
+	    	    	    "backyard longDescription");
 	    	    	this.rooms[3] = backyard;
 	    	    			
 	    	    			
 //	adjacent rooms
 	    	    			
-	    	    	
 	 foyer.setNext(livingroom);
 	 foyer.setPrev(null);
 	    	    			
