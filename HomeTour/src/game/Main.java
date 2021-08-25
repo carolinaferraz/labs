@@ -1,7 +1,5 @@
 package game;
 
-
-
 public class Main {
 	public static void main(String[] args) {
 		
@@ -26,19 +24,14 @@ public class Main {
 	}
 
 	public static void walkAround(Player p1) {
-		String input = " ";
+		String input = "";
 		
-	 			if (input.equalsIgnoreCase("n"));{
+		if (input.equalsIgnoreCase("n")); {
 	 				p1.setCurrentRoom(p1.getCurrentRoom().getNext());
 	 				printRoom(p1);	
-	 			
-	 			  if (input.equalsIgnoreCase("s")); {
+	 	} if (input.equalsIgnoreCase("s")); {
 	 				p1.setCurrentRoom(p1.getCurrentRoom().getPrev());
 	 				printRoom(p1);
-	 			} 
-	 				if (input.equalsIgnoreCase("q")) {
-	 					System.out.println("end of tour");
-	 				}
-		} 
-	}  
+	 				} 
+	 	} 
 	}
