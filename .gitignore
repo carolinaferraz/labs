@@ -3,7 +3,10 @@
 sandbox/
 day09/
 notes.md
-
+*.md
+*.pdf
+2021-09/
+api-b/
 
 # Compiled class file
 *.class
