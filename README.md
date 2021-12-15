@@ -1,2 +1,2 @@
 # labs
-Revature Labs
+Revature Labs and Weekly Coding Challenges!
